@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/mtso/yml-jazz.git"
   },
+  "homepage": "https://github.com/mtso/yml-jazz#readme",
   "author": "mtso <mtso@tuta.io>",
   "license": "ISC",
   "dependencies": {
