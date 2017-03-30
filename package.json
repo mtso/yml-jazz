@@ -1,12 +1,15 @@
 {
   "name": "yml-jazz",
   "version": "1.0.0",
-  "description": "static site gen yml->jazz->html",
+  "description": "static site generator yml->jazz->html",
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repo": "https://github.com/mtso/yml-jazz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtso/yml-jazz.git"
+  },
   "author": "mtso <mtso@tuta.io>",
   "license": "ISC",
   "dependencies": {
