@@ -5,9 +5,10 @@ const jazz = require('jazz')
 const config = require('./config')
 const encoding = 'utf8'
 
-// Save rendered html in case of errors
+// Save rendered html in case of errors.
 var cache = 'Uninitialized, check console logs. Problem is probably in "content.yml" or "index.template"';
 
+// Render yml to html on the fly for each request.
 const server = http.createServer(function(_, res) {
   try {
     var content = fs.readFileSync(config.CONTENT_FILE, encoding)
@@ -19,7 +20,8 @@ const server = http.createServer(function(_, res) {
       res.end(data)
     })
   } catch(err) {
-    console.log(err)
+    // Return the cached content instead if an error is thrown.
+    console.error(err)
     return res.end(cache)
   }
 })
