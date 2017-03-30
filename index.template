@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<body>
+  <h1>{content.Name}</h1>
+  <ul>
+    <li>{content['Move 1']}</li>
+    <li>{content['Move 2']}</li>
+    <li>{content['Move 3']}</li>
+    <li>{content['Move 4']}</li>
+  </ul>
+</body>
+</html>

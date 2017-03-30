@@ -1,0 +1,16 @@
+{
+  "name": "yml-jazz",
+  "version": "1.0.0",
+  "description": "static site gen yml->jazz->html",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repo": "https://github.com/mtso/yml-jazz",
+  "author": "mtso <mtso@tuta.io>",
+  "license": "ISC",
+  "dependencies": {
+    "jazz": "0.0.18",
+    "js-yaml": "^3.8.2"
+  }
+}
